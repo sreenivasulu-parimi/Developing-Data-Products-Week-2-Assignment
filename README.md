@@ -1,16 +1,18 @@
-# Developing-Data-Products-Week-2-Assignment
 # Coursera Developing Data Products Week 2 Peer-graded Assignment: Leaflet
 
 Link on <a href="http://rpubs.com/parimi/400955" target="_blank">RPubs</a>
 
-In this project, we created a web page using R Markdown that features a map created with Leaflet, representing the number of incoming passengers per station on the Parisian RATP railroad network in 2015.
+## Instructions
 
-The web page is [published online on GitHub Pages](http://spujadas.github.io/coursera-ddp-leaflet/ratp-railroad-passenger-traffic-2015.html).
+Create a web page using R Markdown that features a map created with Leaflet.
 
-The source data sets are not included in this repository. To reproduce this web page, you will need to download the following files and place them in a subdirectory named `data`:
+Host your webpage on either GitHub Pages, RPubs, or NeoCities.
 
-- `positions-geographiques-des-stations-du-reseau-ratp.csv`, from [Positions géographiques des stations du réseau RATP](https://data.ratp.fr/explore/dataset/positions-geographiques-des-stations-du-reseau-ratp/information/) (geographic position of stations on RATP network).
+Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!
 
-- `trafic-annuel-entrant-par-station-du-reseau-ferre-2015.csv`, from [Trafic annuel entrant par station du réseau ferré 2015](https://data.ratp.fr/explore/dataset/trafic-annuel-entrant-par-station-du-reseau-ferre-2015/export/) (annual traffic by station on railway network 2015).
+## Review criterialess
 
-- `traces-du-reseau-ferre-idf.csv`, from [Tracés du réseau de transport ferré d'Ile-de-France](https://opendata.stif.info/explore/dataset/traces-du-reseau-ferre-idf/) (layout of the Île-de-France railway network).
+### The rubric contains the following two questions:
+
+1. Does the web page feature a date and is this date less than two months before the date that you're grading this assignment?
+2. Does the web page feature an interactive map that appears to have been created with Leaflet?
