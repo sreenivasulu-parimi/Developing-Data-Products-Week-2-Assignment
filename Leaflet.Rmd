@@ -1,0 +1,39 @@
+---
+title: "R Markdown and Leaflet"
+author: "Sreenivasulu Parimi"
+date: "June 30, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Bangalore City Local BMTC Bus 500A Route Map
+
+### Overview
+
+Bus no.500A is operated by BMTC between Banashankari and Hebbal.Route length is 34 K.M. and number of stops are 45.
+
+List of bus stops in between Banashankari and Hebbal of bus route 500A are given below.
+
+```{r}
+bmtc_500a_route <- read.csv(file="bmtc_500A_route.csv", header=TRUE, sep=",")
+head(bmtc_500a_route)
+bmtc_500a_route$bus_stop
+```
+
+### BMTC 500A Route Map
+
+```{r}
+library(leaflet)
+bmtc_500a_route_map <- leaflet() %>%
+      addTiles()
+bmtc_500a_route_map <- bmtc_500a_route_map %>%
+      addMarkers(
+            lat = bmtc_500a_route$lat,
+            lng = bmtc_500a_route$long,
+            popup = bmtc_500a_route$bus_stop)
+
+bmtc_500a_route_map
+```
